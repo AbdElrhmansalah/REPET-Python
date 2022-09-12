@@ -122,8 +122,8 @@ def original(audio_signal, sampling_frequency):
     """
 
     # Get the number of samples and channels in the audio signal
-    number_samples, number_channels = np.shape(audio_signal)
-
+    number_samples= np.shape(audio_signal)
+    number_channels=1
     # Set the parameters for the STFT
     # (audio stationary around 40 ms, power of 2 for fast FFT and constant overlap-add (COLA),
     # periodic Hamming window for COLA, and step equal to half the window length for COLA)
